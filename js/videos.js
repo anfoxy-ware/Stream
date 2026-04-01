@@ -11,10 +11,10 @@ const videos = [
     },
     {
         categoria: "Peliculas",
-        driveId:   "PEGA_AQUI_EL_ID_DE_DRIVE",
-        titulo:    "Mi segunda película",
-        duracion:  "2h 10min",
-        thumb:     ""
+        driveId:   "1gmxU4JfXO0zTDVNB18t72__m8nDxN4F5",
+        titulo:    "REC 1",
+        duracion:  "1h 15min",
+        thumb:     "assets/imagenes/REC1.jpg"
     },
 
     // ── SERIES ─────────────────────────────────────
