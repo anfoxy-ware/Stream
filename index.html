@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiStream - Película personales</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- ── Header ── -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🎬 MiStream</h1>
+                <p>Tu contenido, donde quieras</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" data-cat="Todos"     class="active">Inicio</a></li>
+                    <li><a href="#" data-cat="Peliculas">Películas</a></li>
+                    <li><a href="#" data-cat="Series">Series</a></li>
+                    <li><a href="#" data-cat="Otros">Otros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ── Contenido principal ── -->
+    <main class="container">
+        <section class="hero">
+            <h2>Bienvenido a tu biblioteca personal</h2>
+            <p>Todos tus videos organizados y listos para reproducir en cualquier dispositivo.</p>
+        </section>
+
+        <!-- Botones de filtro (se generan solos desde videos.js) -->
+        <div id="filterBar" class="filters"></div>
+
+        <!-- Tarjetas (se generan solas desde videos.js) -->
+        <div id="videoGrid" class="video-grid"></div>
+    </main>
+
+    <!-- ── Modal reproductor ── -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">✕</span>
+
+            <div class="video-wrapper">
+                <iframe
+                    id="driveIframe"
+                    src=""
+                    allow="autoplay"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="modal-info">
+                <span class="modal-badge" id="modalBadge"></span>
+                <div>
+                    <h3 id="modalTitle"></h3>
+                    <span id="modalDuration"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MiStream &mdash; Película personales.</p>
+        </div>
+    </footer>
+
+    <!-- 1️⃣ Primero carga tu lista de videos -->
+    <script src="js/videos.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
