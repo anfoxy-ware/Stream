@@ -247,7 +247,7 @@
 
     // ── Modal con autoplay y registro en recientes ──
     function openModal(video) {
-        iframe.src    = `https://drive.google.com/file/d/${video.driveId}/preview?autoplay=1`;
+        iframe.src = `https://drive.google.com/file/d/${video.driveId}/preview`;
         titleEl.textContent = video.titulo;
         durEl.textContent   = video.duracion;
         badgeEl.textContent = video.categoria;
