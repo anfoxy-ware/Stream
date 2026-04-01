@@ -35,14 +35,12 @@
         debounceTimer = setTimeout(runSearch, 120);
     });
 
-    /* Limpiar con el botón ✕ */
     searchClear.addEventListener('click', () => {
         searchInput.value = '';
         searchInput.focus();
         runSearch();
     });
 
-    /* Limpiar con Escape */
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             searchInput.value = '';
@@ -54,26 +52,21 @@
     function runSearch() {
         const query = searchInput.value.trim().toLowerCase();
 
-        /* Botón limpiar */
         searchClear.classList.toggle('visible', query.length > 0);
 
-        /* Obtener todas las cards (las que el app.js no oculta por categoría) */
         const allCards = Array.from(videoGrid.querySelectorAll('.video-card'));
 
-        /* Filtrar por búsqueda */
         let visibleCount = 0;
 
         allCards.forEach(card => {
-            /* Respetamos la visibilidad de categoría que maneja app.js */
+            // Respetamos la visibilidad por categoría (app.js puede ocultar con style.display)
             const hiddenByCategory = card.style.display === 'none';
-
             if (hiddenByCategory) {
                 card.classList.remove('search-hidden');
                 return;
             }
 
             if (!query) {
-                /* Sin query: mostrar todo lo que no esté oculto por categoría */
                 if (card.classList.contains('search-hidden')) {
                     card.classList.remove('search-hidden');
                     animateIn(card);
@@ -98,7 +91,6 @@
             }
         });
 
-        /* Contador */
         if (query) {
             searchCount.innerHTML = `<strong>${visibleCount}</strong> resultado${visibleCount !== 1 ? 's' : ''}`;
             searchCount.classList.add('visible');
@@ -106,7 +98,6 @@
             searchCount.classList.remove('visible');
         }
 
-        /* Estado vacío */
         const showEmpty = query && visibleCount === 0;
         searchEmpty.classList.toggle('visible', showEmpty);
         if (showEmpty) {
@@ -114,7 +105,6 @@
         }
     }
 
-    /* ── Animaciones de cards ── */
     function animateIn(card) {
         card.classList.remove('filter-out');
         card.classList.add('filter-in');
@@ -132,7 +122,6 @@
     /* ══════════════════════════════════════
        3. Resincronizar búsqueda cuando app.js
           cambia el filtro de categoría
-          (observa cambios en el grid)
     ══════════════════════════════════════ */
     const observer = new MutationObserver(() => {
         if (searchInput.value.trim()) {
@@ -149,7 +138,6 @@
         attributeOldValue: false,
     });
 
-    /* Observar cambios de estilo en cards hijas también */
     const childObserver = new MutationObserver(() => {
         if (searchInput.value.trim()) {
             clearTimeout(debounceTimer);
@@ -157,7 +145,6 @@
         }
     });
 
-    /* Observar cuando se añaden cards nuevas */
     new MutationObserver((mutations) => {
         mutations.forEach(m => {
             m.addedNodes.forEach(node => {
