@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiStream - Película personales</title>
+    <title>MiStream - Películas Personales</title>
 
-    <!-- Fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
+
+    <!-- Grano de película -->
+    <div class="grain-overlay" aria-hidden="true"></div>
 
     <!-- ── Header ── -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>🎬 MiStream</h1>
-                <p>Tu contenido, donde quieras</p>
+                <div class="logo-mark">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                        <polygon points="8.5,7 16,11 8.5,15" fill="currentColor"/>
+                        <rect x="1" y="5" width="3" height="2" rx="0.5" fill="currentColor"/>
+                        <rect x="18" y="5" width="3" height="2" rx="0.5" fill="currentColor"/>
+                        <rect x="1" y="15" width="3" height="2" rx="0.5" fill="currentColor"/>
+                        <rect x="18" y="15" width="3" height="2" rx="0.5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>MiStream</h1>
+                    <p>Tu contenido, donde quieras</p>
+                </div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" data-cat="Todos"     class="active">Inicio</a></li>
+                    <li><a href="#" data-cat="Todos"      class="active">Inicio</a></li>
                     <li><a href="#" data-cat="Peliculas">Películas</a></li>
                     <li><a href="#" data-cat="Series">Series</a></li>
                     <li><a href="#" data-cat="Otros">Otros</a></li>
@@ -35,7 +51,12 @@
     <!-- ── Contenido principal ── -->
     <main class="container">
         <section class="hero">
-            <h2>Bienvenido a tu biblioteca personal</h2>
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>Biblioteca Personal</span>
+                <span class="eyebrow-line"></span>
+            </div>
+            <h2>Bienvenido a tu colección</h2>
             <p>Todos tus videos organizados y listos para reproducir en cualquier dispositivo.</p>
         </section>
 
@@ -73,7 +94,10 @@
     <!-- ── Footer ── -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 MiStream &mdash; Película personales.</p>
+            <div class="footer-inner">
+                <span class="footer-logo">MiStream</span>
+                <p>&copy; 2026 &mdash; Películas personales.</p>
+            </div>
         </div>
     </footer>
 
