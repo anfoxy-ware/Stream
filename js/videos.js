@@ -11,9 +11,9 @@ const videos = [
     },
     {
         categoria: "Peliculas",
-        driveId:   "PEGA_AQUI_EL_ID_DE_DRIVE",
-        titulo:    "Mi segunda película",
-        duracion:  "2h 10min",
+        driveId:   "153OzWIr6PdeIRbyh3G3VMWy8zJy4edfA",
+        titulo:    "Etica en la Inteligencia Artificial",
+        duracion:  "20m",
         thumb:     ""
     },
 
