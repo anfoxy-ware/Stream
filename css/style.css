@@ -731,3 +731,218 @@ nav a.active::after {
     .modal { padding: 0; }
     .modal-content { border-radius: 0; max-height: 100dvh; }
 }
+
+/* ══════════════════════════════════════════
+   BARRA DE BÚSQUEDA
+══════════════════════════════════════════ */
+.search-wrapper {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    position: relative;
+    flex: 1;
+    min-width: 240px;
+    max-width: 560px;
+    display: flex;
+    align-items: center;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.search-bar:focus-within {
+    border-color: var(--gold);
+    background: var(--bg-surface);
+    box-shadow:
+        0 0 0 3px var(--gold-dim),
+        0 0 20px rgba(201,162,39,0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    color: var(--text-secondary);
+    pointer-events: none;
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.search-bar:focus-within .search-icon {
+    color: var(--gold);
+}
+
+.search-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+    letter-spacing: 0.01em;
+    caret-color: var(--gold);
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Botón limpiar */
+.search-clear {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.6) rotate(45deg);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        color 0.2s ease,
+        background 0.2s ease;
+    pointer-events: none;
+}
+
+.search-clear.visible {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    pointer-events: auto;
+}
+
+.search-clear:hover {
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.06);
+}
+
+/* Contador de resultados */
+.search-results-count {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.search-results-count.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.search-results-count strong {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* ── Cards ocultas por búsqueda ── */
+.video-card.search-hidden {
+    display: none;
+}
+
+/* ── Animación al filtrar ── */
+.video-card.filter-out {
+    animation: cardOut 0.22s ease forwards;
+}
+
+.video-card.filter-in {
+    animation: cardIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes cardOut {
+    from { opacity: 1; transform: translateY(0) scale(1); }
+    to   { opacity: 0; transform: translateY(8px) scale(0.97); }
+}
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(14px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Estado sin resultados de búsqueda ── */
+.search-empty {
+    display: none;
+    text-align: center;
+    padding: 5rem 0 4rem;
+    animation: fadeUp 0.4s ease;
+}
+
+.search-empty.visible {
+    display: block;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.search-empty-icon {
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    opacity: 0.5;
+}
+
+.search-empty-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.search-empty-sub {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.search-empty-sub span {
+    color: var(--gold);
+    font-style: italic;
+}
+
+/* ══════════════════════════════════════════
+   HEADER SCROLL (encoge al bajar)
+══════════════════════════════════════════ */
+.header.scrolled .container {
+    height: 54px;
+}
+
+.header.scrolled .logo-text p {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header.scrolled {
+    box-shadow: 0 2px 24px rgba(0,0,0,0.4);
+}
+
+.header .container {
+    transition: height 0.3s ease;
+}
+
+.logo-text p {
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    max-height: 2rem;
+    overflow: hidden;
+}
