@@ -142,6 +142,15 @@ const videos = [
         thumb: "https://i.redd.it/which-one-did-you-like-more-between-megan-and-megan-2-0-v0-qh01251s81pg1.jpg?width=2000&format=pjpg&auto=webp&s=c9e7b5711b39426279a110a0254f08277c49da54"
     },
 
+            {
+        categoria: "Peliculas",
+        platform: "embed", 
+        videoId: "https://jefferycontrolmodel.com/e/978cfhwt8n5k",
+        titulo: "Avatar: Fuego y ceniza",
+        duracion: "3h 14min",
+        thumb: "https://pics.filmaffinity.com/Avatar_Fuego_y_ceniza-573008793-large.jpg"
+    },
+
 
 
 
