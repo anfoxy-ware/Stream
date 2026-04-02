@@ -145,7 +145,7 @@ const videos = [
             {
         categoria: "Peliculas",
         platform: "embed", 
-        videoId: "https://jefferycontrolmodel.com/e/978cfhwt8n5k",
+        videoId: "https://vimeos.net/embed-t0asskfapj18.html",
         titulo: "Avatar: Fuego y ceniza",
         duracion: "3h 14min",
         thumb: "https://pics.filmaffinity.com/Avatar_Fuego_y_ceniza-573008793-large.jpg"
