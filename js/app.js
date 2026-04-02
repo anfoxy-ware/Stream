@@ -249,38 +249,28 @@ function openModal(video) {
     const wrapper = document.querySelector(".video-wrapper");
 
     let contentHTML = "";
-    let useIframe = false;
     let videoUrl = "";
+    let isEmbed = false;
 
-
-    // ── GNULA / EMBED EXTERNO ─────────────────
     if (video.platform === "embed") {
-        useIframe = true;
+        isEmbed = true;
         videoUrl = video.videoId;
-    }
-
-
-    // ── GOOGLE DRIVE ─────────────────
-    else {
-        useIframe = true;
+    } else {
         videoUrl = `https://drive.google.com/file/d/${video.videoId}/preview`;
     }
 
-    // ── RENDER ─────────────────
-    if (useIframe) {
-        contentHTML = `
+    contentHTML = `
+        <div class="player-container ${isEmbed ? "is-embed" : "is-drive"}">
             <iframe 
                 src="${videoUrl}" 
                 allow="autoplay; fullscreen" 
-                allowfullscreen
-                style="width:100%; height:100%; border:none;">
+                allowfullscreen>
             </iframe>
-        `;
-    }
+        </div>
+    `;
 
     wrapper.innerHTML = contentHTML;
 
-    // ── INFO ─────────────────
     titleEl.textContent = video.titulo;
     durEl.textContent   = video.duracion;
     badgeEl.textContent = video.categoria;
