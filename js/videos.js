@@ -58,7 +58,7 @@ const videos = [
     {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=76211f2a38e221452cccc6b185646fec06f20107",
+        videoId:   "https://jefferycontrolmodel.com/e/k8m6l2scvzmf",
         titulo:    "Háblame",
         duracion:  "1h 35min",
         thumb:     "https://m.media-amazon.com/images/M/MV5BNjMzMmE5ZDAtYjdhMS00NzUyLTllZjUtZmNmNjRkZWM4YTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
