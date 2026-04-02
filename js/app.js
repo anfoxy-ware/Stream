@@ -245,24 +245,60 @@
         return iconos[cat] || "▶️";
     }
 
-    // ── Modal con autoplay y registro en recientes ──
-    function openModal(video) {
-        iframe.src = `https://drive.google.com/file/d/${video.driveId}/preview`;
-        titleEl.textContent = video.titulo;
-        durEl.textContent   = video.duracion;
-        badgeEl.textContent = video.categoria;
-        modal.classList.add("open");
-        document.body.style.overflow = "hidden";
-        // Guardar en vistos recientemente
-        addToRecent(video);
+function openModal(video) {
+    const wrapper = document.querySelector(".video-wrapper");
+
+    let contentHTML = "";
+    let useIframe = false;
+    let videoUrl = "";
+
+
+    // ── GNULA / EMBED EXTERNO ─────────────────
+    if (video.platform === "embed") {
+        useIframe = true;
+        videoUrl = video.videoId;
     }
+
+
+    // ── GOOGLE DRIVE ─────────────────
+    else {
+        useIframe = true;
+        videoUrl = `https://drive.google.com/file/d/${video.videoId}/preview`;
+    }
+
+    // ── RENDER ─────────────────
+    if (useIframe) {
+        contentHTML = `
+            <iframe 
+                src="${videoUrl}" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen
+                style="width:100%; height:100%; border:none;">
+            </iframe>
+        `;
+    }
+
+    wrapper.innerHTML = contentHTML;
+
+    // ── INFO ─────────────────
+    titleEl.textContent = video.titulo;
+    durEl.textContent   = video.duracion;
+    badgeEl.textContent = video.categoria;
+
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+
+    addToRecent(video);
+}
+
 
     function closeModal() {
-        modal.classList.remove("open");
-        iframe.src = "";
-        document.body.style.overflow = "";
-    }
+    const wrapper = document.querySelector(".video-wrapper");
+    modal.classList.remove("open");
+    wrapper.innerHTML = "";
 
+    document.body.style.overflow = "";
+}
     // ── Eventos del modal ──────────────────────────
     closeBtn.addEventListener("click", closeModal);
     modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
