@@ -22,7 +22,7 @@ const videos = [
     {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://masukestin.com/e/07sevdxdj6n1",
+        videoId:   "https://bysedikamoum.com/e/krra6ya8kcz8",
         titulo:    "Five Nights At Freddy's",
         duracion:  "1h 49min",
         thumb:     "assets/imagenes/FNAF1.jpg"
@@ -31,7 +31,7 @@ const videos = [
         {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://hanerix.com/e/kdsgekk3hyu4",
+        videoId:   "https://bysedikamoum.com/e/my7711mnl0he",
         titulo:    "Five Nights At Freddy's 2",
         duracion:  "1h 45min",
         thumb:     "assets/imagenes/FNAF2.jpg"
@@ -67,7 +67,7 @@ const videos = [
         {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=76211f2a38e221452cccc6b185646fec06f20107",
+        videoId:   "https://bysedikamoum.com/e/hubbd2yw0tz4",
         titulo:    "Un lugar en silencio",
         duracion:  "1h 35min",
         thumb:     "https://m.media-amazon.com/images/M/MV5BZGE5MGQ1NmMtYjIwMi00ZTZmLWFkMjMtZGIzMGQzZWE4OTNlXkEyXkFqcGc@._V1_.jpg"
@@ -76,7 +76,7 @@ const videos = [
     {
     categoria: "Peliculas",
     platform: "embed", 
-    videoId: "https://vibuxer.com/e/f5a7n7rlzxn3",
+    videoId: "https://bysedikamoum.com/e/0g7um7sosr1c",
     titulo: "Solicitud de Amistad",
     duracion: "1h 30min",
     thumb: "https://pics.filmaffinity.com/Friend_Request-273484278-large.jpg"
