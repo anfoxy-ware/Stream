@@ -121,8 +121,25 @@ const videos = [
         platform: "embed", 
         videoId: "https://vimeos.net/embed-qhtwfjm0rs7n.html",
         titulo: "Eliminar amigo 2",
-        duracion: "1h 37min",
+        duracion: "1h 32min",
         thumb: "https://play-lh.googleusercontent.com/z4jAymVGGE3PjTpSnw-Fr2iKNebVp85zTNHlcl1Dpz7JKsazB33PIKOlQVcfFqY4E55rgaEw-cOcE72at38"
+    },
+
+        {
+        categoria: "Peliculas",
+        platform: "embed", 
+        videoId: "https://bysedikamoum.com/e/hhdhx9d1og9d",
+        titulo: "Megan",
+        duracion: "1h 41min",
+        thumb: "https://play-lh.googleusercontent.com/LwIED8r_R-RPZGLUQU4cuHU2mT6m9oBEhqrBdARjRAwTP-3jxhvvZHZdVF8KLrIOrJGcITFiA5VQRMPLcA"
+    },
+        {
+        categoria: "Peliculas",
+        platform: "embed", 
+        videoId: "https://bysedikamoum.com/e/jjqxmr9tg0sy",
+        titulo: "Megan 2.0",
+        duracion: "2h",
+        thumb: "https://i.redd.it/which-one-did-you-like-more-between-megan-and-megan-2-0-v0-qh01251s81pg1.jpg?width=2000&format=pjpg&auto=webp&s=c9e7b5711b39426279a110a0254f08277c49da54"
     },
 
 
