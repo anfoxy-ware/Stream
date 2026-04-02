@@ -58,7 +58,7 @@ const videos = [
     {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://jefferycontrolmodel.com/e/k8m6l2scvzmf",
+        videoId:   "https://bysedikamoum.com/e/f2scgodkror6",
         titulo:    "Háblame",
         duracion:  "1h 35min",
         thumb:     "https://m.media-amazon.com/images/M/MV5BNjMzMmE5ZDAtYjdhMS00NzUyLTllZjUtZmNmNjRkZWM4YTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
