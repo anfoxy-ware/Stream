@@ -22,7 +22,7 @@ const videos = [
     {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=82a7fb3653c9cbf3f550a7770257b7b7ced01163",
+        videoId:   "https://masukestin.com/e/07sevdxdj6n1",
         titulo:    "Five Nights At Freddy's",
         duracion:  "1h 49min",
         thumb:     "assets/imagenes/FNAF1.jpg"
@@ -31,11 +31,56 @@ const videos = [
         {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=c146c15bf7eb72e00ca54bc097270ffcf9a756a9",
+        videoId:   "https://hanerix.com/e/kdsgekk3hyu4",
         titulo:    "Five Nights At Freddy's 2",
         duracion:  "1h 45min",
         thumb:     "assets/imagenes/FNAF2.jpg"
     },
+
+            {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=55c9ba4031f1761a45438331266dbdd0e9fd44c5",
+        titulo:    "Geotormenta",
+        duracion:  "1h 49min",
+        thumb:     "assets/imagenes/Geo.jpg"
+    },
+
+            {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=525b5c58595b461b1fb729bc93882679130571ca",
+        titulo:    "2012",
+        duracion:  "2h 37min",
+        thumb:     "assets/imagenes/2012.jpg"
+    },
+
+    {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=76211f2a38e221452cccc6b185646fec06f20107",
+        titulo:    "Háblame",
+        duracion:  "1h 35min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BNjMzMmE5ZDAtYjdhMS00NzUyLTllZjUtZmNmNjRkZWM4YTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+
+        {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://ww3.gnulahd.nu/nuevo/embed.php?id=76211f2a38e221452cccc6b185646fec06f20107",
+        titulo:    "Un lugar en silencio",
+        duracion:  "1h 35min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BZGE5MGQ1NmMtYjIwMi00ZTZmLWFkMjMtZGIzMGQzZWE4OTNlXkEyXkFqcGc@._V1_.jpg"
+    },
+
+    {
+    categoria: "Peliculas",
+    platform: "embed", 
+    videoId: "https://vibuxer.com/e/f5a7n7rlzxn3",
+    titulo: "Solicitud de Amistad",
+    duracion: "1h 30min",
+    thumb: "https://pics.filmaffinity.com/Friend_Request-273484278-large.jpg"
+},
 
 
     // ── SERIES ─────────────────────────────────────
