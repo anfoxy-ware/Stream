@@ -189,70 +189,70 @@ const videos = [
                 duracion: "45min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-aeyyn4wosizi.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E2 - Mentiras",
                 duracion: "44min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-f6bi49xfm3hv.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E3 - Pasado y presente",
                 duracion: "45min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-3q2d6cvvht3t.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E4 - Vidas dobles",
                 duracion: "47min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-6pd8bmuhvtas.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E5 - Verdades",
                 duracion: "45min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-xg5rshu2xnoj.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E6 - Sic mundus creatus est",
                 duracion: "51min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-r3pwnpsuaptq.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E7 - Encrucijadas",
                 duracion: "51min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-d69adkcitqct.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E8 - Lo que se siembre, eso mismo se cosecha",
                 duracion: "50min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-sbget29iimla.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E9 - Todo ocurre ahora",
                 duracion: "55min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-j2ra6hgh2ue1.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             },
             {
                 titulo:   "T1 E10 - Episodio 10",
                 duracion: "57min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-vuxwx24kss4c.html",
-                thumb:    "https://static.wikia.nocookie.net/dark-netflix/images/f/fd/Dark_Title_Screen.jpg/revision/latest/scale-to-width-down/1200?cb=20171111233324"
+                thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             }
         ]
     },
