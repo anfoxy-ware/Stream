@@ -1213,19 +1213,7 @@ nav a.active::after {
     .ep-nav-counter { min-width: 24px; }
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE — 480px (móvil)
-   Modal a pantalla completa + video limitado
-══════════════════════════════════════════ */
 @media (max-width: 480px) {
-    .container { padding: 0 16px; }
-
-    .video-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-    .video-info { padding: 0.75rem; }
-    .video-info h3 { font-size: 0.82rem; }
-    .video-info p  { font-size: 0.72rem; }
-
-    /* Modal ocupa toda la pantalla */
     .modal {
         padding: 0;
         align-items: flex-end;
@@ -1238,28 +1226,45 @@ nav a.active::after {
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        animation: none; /* más fluido en móvil */
     }
 
-    /* Video limitado a 50vh para que quepa el info debajo */
     .video-wrapper {
-        aspect-ratio: unset;
-        height: 50vh;
-        max-height: 50vh;
-        flex-shrink: 0;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 0;
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 100%;
     }
 
     .modal-info {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
+        gap: 0.3rem;
         padding: 0.8rem 1rem;
-        flex: 1;
-        overflow-y: auto;
     }
 
-    .modal-info-main h3  { font-size: 0.88rem; }
-    .modal-info-main span { font-size: 0.72rem; }
+    .modal-info h3 {
+        font-size: 0.85rem;
+    }
 
-    .close-btn { width: 28px; height: 28px; }
+    .modal-info span {
+        font-size: 0.7rem;
+    }
+
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+        .modal-content {
+        animation: none;
+    }
+
+    .video-wrapper {
+        max-height: 50vh;
+    }
 }
