@@ -1213,6 +1213,10 @@ nav a.active::after {
     .ep-nav-counter { min-width: 24px; }
 }
 
+/* ══════════════════════════════════════════
+   RESPONSIVE — 480px (móvil)
+   Modal a pantalla completa + video limitado
+══════════════════════════════════════════ */
 @media (max-width: 480px) {
     .modal {
         padding: 0;
@@ -1261,10 +1265,10 @@ nav a.active::after {
         height: 30px;
     }
         .modal-content {
-        animation: none;
+        animation: none; /* más fluido en móvil */
     }
 
     .video-wrapper {
-        max-height: 50vh;
+        max-height: 50vh; /* evita que el video sea gigante */
     }
 }

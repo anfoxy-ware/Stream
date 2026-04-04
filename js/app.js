@@ -290,7 +290,6 @@
         content.addEventListener('animationend', () => {
             episodesModal.classList.remove("open");
             content.classList.remove('closing');
-            document.body.style.overflow = "";
         }, { once: true });
     }
 
@@ -330,7 +329,7 @@
             durEl.textContent   = video.duracion;
             badgeEl.textContent = video.categoria;
         }
-
+        
         updateEpNav();
     }
 
