@@ -186,7 +186,7 @@ const videos = [
         episodios: [
             {
                 titulo:   "T1 E1- Secretos",
-                duracion: "45min",
+                duracion: "51min",
                 platform: "embed",
                 videoId:  "https://vimeos.net/embed-aeyyn4wosizi.html",
                 thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
