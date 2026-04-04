@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiStream - Películas Personales</title>
 
-    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Grano de película -->
     <div class="grain-overlay" aria-hidden="true"></div>
 
     <!-- ── Header ── -->
@@ -39,7 +35,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" data-cat="Todos"      class="active">Inicio</a></li>
+                    <li><a href="#" data-cat="Todos"     class="active">Inicio</a></li>
                     <li><a href="#" data-cat="Peliculas">Películas</a></li>
                     <li><a href="#" data-cat="Series">Series</a></li>
                     <li><a href="#" data-cat="Otros">Otros</a></li>
@@ -60,20 +56,15 @@
             <p>Todos tus videos organizados y listos para reproducir en cualquier dispositivo.</p>
         </section>
 
-        <!-- ── Barra de búsqueda ── -->
+        <!-- Búsqueda -->
         <div class="search-wrapper">
             <div class="search-bar" id="searchBar">
                 <svg class="search-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
                 </svg>
-                <input
-                    type="text"
-                    id="searchInput"
-                    class="search-input"
+                <input type="text" id="searchInput" class="search-input"
                     placeholder="Buscar en tu colección..."
-                    autocomplete="off"
-                    spellcheck="false"
-                />
+                    autocomplete="off" spellcheck="false"/>
                 <button class="search-clear" id="searchClear" aria-label="Limpiar búsqueda">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
                         <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
@@ -83,19 +74,22 @@
             <div class="search-results-count" id="searchCount"></div>
         </div>
 
-        <!-- Botones de filtro (se generan solos desde videos.js) -->
+        <!-- Filtros -->
         <div id="filterBar" class="filters"></div>
 
-        <!-- Sección "Vistos recientemente" -->
-        <div id="recentSection" class="recent-section" style="display: none;">
-            <h3 class="section-title">🕒 Vistos recientemente</h3>
+        <!-- Sección recientes -->
+        <div id="recentSection" class="recent-section" style="display:none;">
+            <h3 class="section-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Vistos recientemente
+            </h3>
             <div class="recent-grid" id="recentGrid"></div>
         </div>
 
-        <!-- Tarjetas (se generan solas desde videos.js) -->
+        <!-- Grid principal -->
         <div id="videoGrid" class="video-grid"></div>
 
-        <!-- Mensaje sin resultados de búsqueda -->
+        <!-- Vacío de búsqueda -->
         <div class="search-empty" id="searchEmpty">
             <div class="search-empty-icon">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
@@ -110,25 +104,67 @@
 
     <!-- ── Modal reproductor ── -->
     <div id="playerModal" class="modal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
         <div class="modal-content">
-            <span class="close-btn" id="closeBtn">✕</span>
-
-            <div class="video-wrapper">
-                <iframe
-                    id="driveIframe"
-                    src=""
-                    allow="autoplay"
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-            <div class="modal-info">
+            <div class="modal-header">
                 <span class="modal-badge" id="modalBadge"></span>
-                <div>
+                <button class="close-btn" id="closeBtn" aria-label="Cerrar">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="video-wrapper" id="videoWrapper"></div>
+            <div class="modal-info">
+                <div class="modal-info-main">
                     <h3 id="modalTitle"></h3>
                     <span id="modalDuration"></span>
                 </div>
+                <!-- Navegación de episodios — solo visible en series -->
+                <div class="ep-nav" id="epNav">
+                    <button class="ep-nav-btn" id="epPrevBtn" aria-label="Episodio anterior">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                        <span>Anterior</span>
+                    </button>
+                    <span class="ep-nav-counter" id="epNavCounter"></span>
+                    <button class="ep-nav-btn ep-nav-btn--next" id="epNextBtn" aria-label="Episodio siguiente">
+                        <span>Siguiente</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- ── Modal episodios (series) ── -->
+    <div id="episodesModal" class="modal episodes-modal">
+        <div class="modal-backdrop" id="episodesBackdrop"></div>
+        <div class="episodes-content">
+
+            <div class="episodes-header">
+                <div class="episodes-hero">
+                    <div class="episodes-thumb" id="episodesThumb"></div>
+                    <div class="episodes-meta">
+                        <span class="modal-badge">Serie</span>
+                        <h2 id="episodesTitle"></h2>
+                        <p class="episodes-count" id="episodesCount"></p>
+                    </div>
+                </div>
+                <button class="close-btn episodes-close" id="episodesCloseBtn" aria-label="Cerrar">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="episodes-divider"></div>
+
+            <div class="episodes-list" id="episodesList"></div>
+
         </div>
     </div>
 
@@ -142,10 +178,8 @@
         </div>
     </footer>
 
-    <!-- 1️⃣ Primero carga tu lista de videos -->
     <script src="js/videos.js"></script>
     <script src="js/app.js"></script>
-    <!-- 2️⃣ Mejoras visuales (búsqueda, scroll, etc.) -->
     <script src="js/mistream-ui.js"></script>
 
 </body>
