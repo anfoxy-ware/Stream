@@ -107,9 +107,9 @@ const videos = [
     {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://bysejikuar.com/e/1ek6do146zku",
+        videoId:   "https://vimeos.net/embed-05cj58qowmxd.html",
         titulo:    "Until Dawn",
-        duracion:  "1h 37min",
+        duracion:  "1h 43min",
         thumb:     "https://m.media-amazon.com/images/M/MV5BNzg5MTNkOTQtZDU2ZC00MjM3LTk1MDAtMTYyZDFmN2Y2MTY5XkEyXkFqcGc@._V1_.jpg"
     },
     {
