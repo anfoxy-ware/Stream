@@ -176,6 +176,14 @@ const videos = [
         duracion:  "1h 45min",
         thumb:     "https://tomatazos.buscafs.com/2022/09/amor-adulto.jpg"
     },
+        {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/7ppivg2pnic1",
+        titulo:    "The invasion",
+        duracion:  "1h 39min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BOTU3ZTg4OTktODUyNi00N2U4LWIwYzYtNDAzZDE0MjgyOTM4XkEyXkFqcGc@._V1_.jpg"
+    },
 
     // ── SERIES ──────────────────────────────────────
     // Ejemplo — reemplaza videoId y thumbs con los tuyos:
