@@ -200,12 +200,31 @@ const videos = [
         duracion:  "1h 32min",
         thumb:     "https://m.media-amazon.com/images/M/MV5BZDkyMDBiN2EtYTM2Ni00ZjRjLWFmZWQtZDdkZDBhNTQzYTU4XkEyXkFqcGc@._V1_.jpg"
     },
+    ,
+            {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/5pje93c98rbt",
+        titulo:    "Smile",
+        duracion:  "1h 56min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BNzg4YjExMDAtYWUxOS00MTFmLTlmMzAtYWYyMjIwOGQ3OWEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+
+    ,
+            {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/l6ihiku5q4y0",
+        titulo:    "Smile 2",
+        duracion:  "2h 09min",
+        thumb:     "https://play-lh.googleusercontent.com/vnQS53VE9s0BvbV3r4dXwAXWAEUODwoTlJ9RF2rzfzBs6u0p3thjYMsWabZi70wCMPkIffIRcWtNjvQX_w"
+    },
 
 
 
     
     // ── SERIES ──────────────────────────────────────
-    // Ejemplo — reemplaza videoId y thumbs con los tuyos:
+    // Serie :Dark
     {
         categoria: "Series",
         titulo:    "Dark",
@@ -282,6 +301,76 @@ const videos = [
                 thumb:    "https://sitecoreaudioprod.umusicpub.com/sitecore_media/E7A3915F-7FDF-4C46-B27B-FC9DCC0560FF.jpg"
             }
         ]
+  
+  
+  
+    },
+
+    {
+        categoria: "Series",
+        titulo:    "Red Rose",
+        thumb:     "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABU6xDpAQjYShWxrOcEoJYeoY_BGLWHA63lnltDoQTKlXOFQQY96m4P_D_IEZtt5mUo_a3h_Ua5RB2lwDgULVRqXNfzONH576FtzMvBNi2yV21aunbCE919WI2htlzXuYIUxcjg.webp?r=15a",
+        episodios: [
+            {
+                titulo:   "T1 E1- El norte es muy deprimente",
+                duracion: "49min",
+                platform: "embed",
+                videoId:  "https://xupalace.org/video/tt19788500-1x01/",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E2 - El Jardín",
+                duracion: "40min",
+                platform: "embed",
+                videoId:  "https://vimeos.net/embed-cuiwa7g8iwp4.html",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E3 - Una cabeza de turco",
+                duracion: "48min",
+                platform: "embed",
+                videoId:  "https://jefferycontrolmodel.com/e/eloyyvglw9gh",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E4 - Manchester",
+                duracion: "43min",
+                platform: "embed",
+                videoId:  "https://vimeos.net/embed-pg796lscjjh1.html",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E5 - Aislamiento",
+                duracion: "43min",
+                platform: "embed",
+                videoId:  "https://vimeos.net/embed-8rtf6obn39h3.html",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E6 - Día de resultados",
+                duracion: "44min",
+                platform: "embed",
+                videoId:  "https://vimeos.net/embed-qcs9p1y7dw5y.html",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E7 - Más vale tarde que nunca",
+                duracion: "37min",
+                platform: "embed",
+                videoId:  "https://vimeos.net/embed-dodwgd8lhrli.html",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            },
+            {
+                titulo:   "T1 E8 - El jardinero",
+                duracion: "41min",
+                platform: "embed",
+                videoId:  "https://vimeos.net/embed-mlarzwk6k8kv.html",
+                thumb:    "https://horrornewsnetwork.net/wp-content/uploads/2020/02/Screenshot_20200227-2349253.png"
+            }
+        ]
+  
+  
+  
     },
 
 
