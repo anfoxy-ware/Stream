@@ -184,7 +184,26 @@ const videos = [
         duracion:  "1h 39min",
         thumb:     "https://m.media-amazon.com/images/M/MV5BOTU3ZTg4OTktODUyNi00N2U4LWIwYzYtNDAzZDE0MjgyOTM4XkEyXkFqcGc@._V1_.jpg"
     },
+            {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysevepoin.com/e/ot6x8airpg2p",
+        titulo:    "Super Mario Galaxy: La película",
+        duracion:  "1h 37min - Grabada en cines",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BMTZkYzE2OGYtYTdjNC00ZDI2LTg0MjEtMjE0YmUzZGFjM2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+            {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/21nok7v722sg",
+        titulo:    "Super Mario Bros: La película",
+        duracion:  "1h 32min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BZDkyMDBiN2EtYTM2Ni00ZjRjLWFmZWQtZDdkZDBhNTQzYTU4XkEyXkFqcGc@._V1_.jpg"
+    },
 
+
+
+    
     // ── SERIES ──────────────────────────────────────
     // Ejemplo — reemplaza videoId y thumbs con los tuyos:
     {
