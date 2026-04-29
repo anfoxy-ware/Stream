@@ -228,6 +228,54 @@ const videos = [
         duracion:  "2h 05min",
         thumb:     "https://resources.diariolibre.com/images/2022/08/22/pelicula-andrea-cine-bca3abc2-focus-0-0-896-504.jpg"
     },
+    
+                {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/xuo3xbnctsc5",
+        titulo:    "Los juegos del hambre",
+        duracion:  "2h 22min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BZjI5MjZiYWQtZTgxMi00ODUxLTkwOTctYWFiZmJkOWU0MWQ3XkEyXkFqcGc@._V1_.jpg"
+    },
+                       
+    {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/gv6rrh3lt9jt",
+        titulo:    "Los juegos del hambre: En llamas",
+        duracion:  "2h 26min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BZTBmOGU0MDctMTgyNS00ZDFkLWFlOTItOTI3OWYzNTU3MjBmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+
+                    {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/ihk0j2qe26aj",
+        titulo:    "Los juegos del hambre: Sinsajo - Parte 1",
+        duracion:  "2h 02min",
+        thumb:     "https://spoilertown.com/wp-content/uploads/2024/06/hunger-games-mockingjay-part-1-2014.webp"
+    },
+
+                        {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/pygz5iq5688z",
+        titulo:    "Los juegos del hambre: Sinsajo - Parte 2",
+        duracion:  "2h 16min",
+        thumb:     "https://i.blogs.es/e286af/cartel-los-juegos-del-hambre-sinsajo-parte-2/1366_2000.jpg"
+    },
+
+     {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/q970m4k8zjge",
+        titulo:    "Los juegos del hambre: Balada de los pajaros cantores y serpientes",
+        duracion:  "2h 37min",
+        thumb:     "https://m.media-amazon.com/images/M/MV5BMjIwMDkwZjUtMGU0ZC00NGQ5LWJhMWUtNWZjZDFjZjU2NTZiXkEyXkFqcGc@._V1_.jpg"
+    },
+
+    
+    
 
 
 
