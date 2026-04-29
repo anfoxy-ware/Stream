@@ -220,6 +220,15 @@ const videos = [
         thumb:     "https://play-lh.googleusercontent.com/vnQS53VE9s0BvbV3r4dXwAXWAEUODwoTlJ9RF2rzfzBs6u0p3thjYMsWabZi70wCMPkIffIRcWtNjvQX_w"
     },
 
+                {
+        categoria: "Peliculas",
+        platform:  "drive",
+        videoId:   "1O0zv-TJWabh3bZChwNgqScQ2bAT8JOUr",
+        titulo:    "Andrea",
+        duracion:  "2h 05min",
+        thumb:     "https://resources.diariolibre.com/images/2022/08/22/pelicula-andrea-cine-bca3abc2-focus-0-0-896-504.jpg"
+    },
+
 
 
     
@@ -306,6 +315,7 @@ const videos = [
   
     },
 
+    // Serie :Red Rose
     {
         categoria: "Series",
         titulo:    "Red Rose",
