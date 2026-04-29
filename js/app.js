@@ -110,7 +110,7 @@
     // ── Filtros ────────────────────────────────────
     function buildFilters() {
         filterBar.innerHTML = "";
-        const cats = ["Todos", ...new Set(videos.map(v => v.categoria))];
+        const cats = ["Todos", ...new Set(videos.map(v => v.categoria).filter(Boolean))];
 
         cats.forEach(cat => {
             const btn = document.createElement("button");
@@ -290,6 +290,7 @@
         content.addEventListener('animationend', () => {
             episodesModal.classList.remove("open");
             content.classList.remove('closing');
+            document.body.style.overflow = "";
         }, { once: true });
     }
 
@@ -329,7 +330,7 @@
             durEl.textContent   = video.duracion;
             badgeEl.textContent = video.categoria;
         }
-        
+
         updateEpNav();
     }
 
