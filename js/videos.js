@@ -187,9 +187,9 @@ const videos = [
             {
         categoria: "Peliculas",
         platform:  "embed",
-        videoId:   "https://bysevepoin.com/e/ot6x8airpg2p",
+        videoId:   "blob:https://vimeos.net/b75b7f65-375d-4a37-aed5-208c9b73e456",
         titulo:    "Super Mario Galaxy: La película",
-        duracion:  "1h 37min - Grabada en cines",
+        duracion:  "1h 37",
         thumb:     "https://m.media-amazon.com/images/M/MV5BMTZkYzE2OGYtYTdjNC00ZDI2LTg0MjEtMjE0YmUzZGFjM2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
     },
             {
