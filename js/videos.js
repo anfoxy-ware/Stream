@@ -274,6 +274,14 @@ const videos = [
         thumb:     "https://m.media-amazon.com/images/M/MV5BMjIwMDkwZjUtMGU0ZC00NGQ5LWJhMWUtNWZjZDFjZjU2NTZiXkEyXkFqcGc@._V1_.jpg"
     },
 
+         {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://bysedikamoum.com/e/q970m4k8zjge",
+        titulo:    "Ready player one",
+        duracion:  "2h 37min",
+        thumb:     "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2018/03/rpo-ready-player-one.jpg"
+    },
     
     
 
