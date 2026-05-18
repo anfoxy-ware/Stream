@@ -283,6 +283,15 @@ const videos = [
         thumb:     "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2018/03/rpo-ready-player-one.jpg"
     },
     
+             {
+        categoria: "Peliculas",
+        platform:  "embed",
+        videoId:   "https://hglink.to/e/9du7edno9x79",
+        titulo:    "Una niñera a prueba de balas",
+        duracion:  "1h 36min",
+        thumb:     "https://i.ytimg.com/vi/xgaDmQ0Nnak/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB3W2CTG_PUHuacelgO59DYclvZuA"
+    },
+    
     
 
 
